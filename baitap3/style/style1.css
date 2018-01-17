@@ -1,0 +1,23 @@
+
+.baotata {
+       width: 100%;
+       
+}
+img {
+	width: 300px;
+}
+		
+.thang {
+	border: 5px outset; border-color: rgba(128, 120, 145, 0.79);
+	float: left;
+	width: 30%;
+	height: 520px;
+    text-align: center;
+    margin: 3px;
+}
+.gachngang {
+	text-decoration: line-through;
+}
+div.styleimg8 {
+	padding-top: 70px;
+}

@@ -1,0 +1,39 @@
+@media only screen and (max-width: 500px){
+    #banner {
+    	max-width: 100%;
+    	height: 150px;
+    }
+
+    .container img {
+
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    #banner {
+        max-width: 100%;
+        height: 320px;
+    }
+
+    .container img {
+      
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (width: 1024px){
+    #banner {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .container img {
+      
+        margin-top: 20px;
+    }
+
+    a {
+        font-size: 24px;
+    }
+}

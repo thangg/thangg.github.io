@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ccc;
+}
+#tatca {
+	margin: 0px 0 0 450px;
+	height: 670px;
+	width: 420px;
+	background-image: url("https://em.wattpad.com/5ca7866a777c01c053b0a83d1b6570bfda765fe9/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4336737a704a6b416a76717879673d3d2d31312e313462623662333234376162646162303535303239323134323039382e6a7067?s=fit&w=1280&h=1280");
+    padding: 10px 0 0 0;
+}
+h2, p {
+	text-align: center;
+	font-family: cursive;
+	font-size: 22px;
+}
+p {
+	font-size: 18px;
+}
+#from {
+    padding: 10px 0px 0px 45px;
+    font-size: 20px;
+}
+#email, #matkhau {
+    width: 200px;
+    height: 25px;
+}
+#rember {
+	font-size: 14px;
+}
+#pass {
+	margin-top: 10px
+};
+#double {
+	margin-top: 10px;
+}
+.dang {
+	width: 90px;
+	height: 25px;
+	font-size: 15px;
+}

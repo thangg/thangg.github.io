@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	/*background-color: #ccc;*/
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: cursive;
+
+}
+	/*#about {
+		max-width: 900px;
+	    margin: auto;
+	}*/
+#banner {
+	width: 100%;
+	height: 350px;
+}
+/*#link {
+	background-color: #ccc;
+	height: 35px;
+}*/
+/*a {
+	width: 150px;
+    margin-left: 100px;
+    padding-left: 200px;
+    font-size: 22px;
+    text-decoration: blink;
+    color: black;
+
+}*/
+/*a:hover {
+	color: red;
+}*/
+
+#image img {
+	width: 300px;
+	float: left;
+	/*border: 1px solid red;
+	padding: 15px;
+}

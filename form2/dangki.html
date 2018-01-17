@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Đăng kí tài khoản</title>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" href="css/style2.css"/>
+  </head>
+  <body>
+  	<form action="dkthanhcong.html" id="form-register">
+
+       <div id="tatca">
+        <h1>Đăng Kí Tài Khoản</h1>
+
+      <label class="above" for="name">Họ và tên :</label></br>
+  		<input type="text" name="name" placeholder="Họ và tên" id="name" class="style row1"/>
+      <span></span></br> <!--for phải đặt giống id để khi click vào chữ thì vẫn view được-->
+       
+      <label class="above" for="username">Tên đăng nhập :</label></br>
+  		<input type="text" name="username" placeholder="Tên đăng nhập" id="username" class="style row2"/>
+      <span></span></br>
+
+      <label class="above" for="email">Email :</label></br>
+  		<input type="text" name="email" placeholder="..(@gmail.com)" id="email" class="style row3"/>
+      <span></span></br>
+
+      <label class="above" for="pass">Mật khẩu :</label></br>
+  		<input type="password" name="pass" placeholder="Nhập mật khẩu từ 6-32 kí tự" id="pass" class="style row4"/>
+      <span></span></br>
+
+      <label class="above" for="pass2">Nhập lại mật khẩu :</label></br>
+  		<input type="password" name="enterpass" placeholder="Nhập lại mật khẩu" id="pass2" class="style row5"/>
+      <span></span></br>
+
+      <label class="above" for="date">Ngày sinh :</label></br>
+  		<input type="date" name="dateOfBirth" placeholder="Ngày/tháng/năm sinh...." id="date" class="style row6"/>
+      <span></span>
+
+    <div id="gioitinh">
+      <label class="sex">Giới tính :</label>
+      <input type="radio" name="gioitinh" id="genden"/><label for="genden">Nam</label>
+      <input type="radio" name="gioitinh" id="genden1"/><label for="genden1">Nữ</label>
+    </div>
+    
+    <input type="submit" value="Hoàn tất" class="style row7">
+
+  	</form>
+    </div>
+
+  	<script src="js/jquery-3.2.1.min.js"></script>
+  	<script src="js/script2.js"></script>
+  </body>
+</html>

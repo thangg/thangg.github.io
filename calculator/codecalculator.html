@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	  <title>Pirato komputilo</title>
+   	  <meta charset="utf-8"/>
+   	  <link rel="stylesheet" type="text/css" href="stylecalculator.css"/>
+
+   </head>
+   	   <body>
+
+   	   	   <div class="tatca">
+
+   	   	      <h3>OneThePice</h3>
+
+   	   	   	<div>
+   	   	   	   <input type="text" id="hienthi" placeholder="0" value=""/>
+   	   	   	</div>
+   	   	   	<div class="hang so1">
+   	   	   		<input type="button" value="7" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="8" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="9" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="CE" onclick="hienthi.value=hienthi.value.substr(0,hienthi.value.length-1)" id="buton" style="background-color: #ee533f"/>
+   	   	   		<input type="button" value="√" onclick="hienthi.value=hienthi.value**0.5" id="buton" style="background-color: ghostwhite"/>
+   	   	   		<input type="button" value="x²" onclick="hienthi.value=hienthi.value*hienthi.value" id="buton" style="background-color: ghostwhite"/>  	   	   		
+   	   	   	</div>
+   	   	   	<div class="hang so2">
+   	   	   		<input type="button" value="6" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="5" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="4" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<button value="*" onclick="hienthi.value+=this.value" id="buton" style="background-color: ghostwhite">x</button>
+   	   	   		<button value="/" onclick="hienthi.value+=this.value" id="buton" style="background-color: ghostwhite">÷</button>	   	   		
+   	   	   	</div>
+   	   	   	<div class="hang so3">
+   	   	   		<input type="button" value="3" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="2" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="1" onclick="hienthi.value+=this.value" id="buton"/>
+   	   	   		<input type="button" value="+" onclick="hienthi.value+=this.value" id="buton" style="background-color: ghostwhite"/>
+   	   	   		<input type="button" value="-" onclick="hienthi.value+=this.value" id="buton" style="background-color: ghostwhite"/>  	   	   			   	  
+   	   	   	</div>
+   	   	   	<div class="hang so4">
+   	   	   		<input type="button" value="0" onclick="hienthi.value+=this.value" id="butonso0"/>
+   	   	   		<input type="button" value="." onclick="hienthi.value+=this.value" id="butonso1"/>
+   	   	   		<input type="button" value="(" onclick="hienthi.value+=this.value" id="butonso1"/>
+   	   	   		<input type="button" value=")" onclick="hienthi.value+=this.value" id="butonso1"/>
+   	   	   		<input type="button" value="%" onclick="hienthi.value=hienthi.value/100" id="butonso1"/>
+   	   	   	</div>
+   	   	   	<input type="button" value="=" onclick="hienthi.value = eval(hienthi.value)" id="butonso2"/>
+
+   	   	   </div>
+
+   	   </body>
+   	   <script src="script.js"></script>
+</html>

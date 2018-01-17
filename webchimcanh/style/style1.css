@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+
+}
+body {
+	background-color: rgba(158, 158, 158, 0.36);
+	margin: auto;
+	padding: 0;
+	width: 1000px;
+}
+
+div.h1 {
+    
+    color: #7836dc;
+    text-align: center;
+    background: white;
+    height: 63px;
+    padding: 0;
+    margin-top: -25px;
+}
+ /*h1 {
+	 position: relative;
+	}*/
+
+.box {
+
+	margin-top: 0px;
+	border: 10px groove #eff1fd ;
+	background-color: #e7f8e8;
+	float: left;
+}
+.box img {
+	width: 480px;
+	height: 450px;
+}
+.box h3 {
+	margin-left: 30px;
+}
+.box p {
+	margin-left: 20px;
+	text-decoration: underline;
+	color: #dd3327;
+}

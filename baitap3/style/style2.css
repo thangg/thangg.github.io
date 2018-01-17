@@ -1,0 +1,27 @@
+ html {
+ 	width: 100%;
+ }
+.stylelink1
+	a:hover {
+ 	color: red;} 
+
+ 	a:visited {
+ 		color: #4982ec;
+ 	}
+	
+	a:link {
+		color: black;
+	}
+.logo {
+	text-align: center;
+	width: 100%;   
+}
+.logo img {
+	width: 1000px;
+}
+.stylelink {
+	text-align: center;
+	font-size:20px;
+	background-color: #63ef96;
+	
+}

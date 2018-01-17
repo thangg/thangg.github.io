@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Đăng kí tài khoản</title>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" href="css/style2.css"/>
+  </head>
+  <body>
+  	<div id="tatca">
+        <h1>Đăng Kí Tài Khoản</h1>
+  	<form action="dkthanhcong.html">
+  		<input type="text" name="name" placeholder="Họ và tên" id="name" class="style row1"/></br>
+  		<input type="text" name="username" placeholder="Tên đăng nhập" id="username" class="style row2"/></br>
+  		<input type="text" name="email" placeholder="Email" id="email" class="style row3"/></br>
+  		<input type="password" name="pass" placeholder="Mật khẩu" id="pass" class="style row4"/></br>
+  		<input type="password" name="enterpass" placeholder="Nhập lại mật khẩu" class="style row5"/></br>
+  		<input type="text" name="dateOfBirth" placeholder="Ngày/tháng/năm sinh...."
+  		class="style row6" id="row6"/>
+
+  		<select name="date" class="css date">
+  			 <option>Ngày</option>
+  		<script>
+  			for(var i = 1; i <= 30; i++){
+  				document.write("<option> "+ i +" </option>")
+  			}
+  		</script>
+
+  		</select>
+  		<select name="month" class="css month">
+  			<option>Tháng</option>
+  		    <script>
+  		    	for(var i = 1; i <= 12; i++){
+  				document.write("<option> "+ i +" </option>")
+  			}
+  		    </script>
+  		</select>
+
+  		<select name="year" class="css year">
+  			<option>Năm</option>
+        <script>
+            for(var i = 2017; i >= 1960; i--){
+          document.write("<option> "+ i +" </option>")
+        }
+          </script>
+  		</select></br>
+    <div id="gioitinh">
+      <input type="radio" name="gioitinh" id="genden"/><label for="genden">Nam</label>
+      <input type="radio" name="gioitinh" id="genden1"/><label for="genden1">Nữ</label>
+    </div>
+    <input type="submit" value="Hoàn tất" class="style row7">
+  	</form>
+    </div>
+  	<script src="js/jquery-3.2.1.min.js"></script>
+  	<script src="js/script.js"></script>
+  </body>
+</html>

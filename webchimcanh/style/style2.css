@@ -1,0 +1,42 @@
+.logo img {
+       width: 1000px;
+}
+.link1 a { 
+
+     font-size: 20px;
+     text-align: center;
+     padding: 8px;
+     background: #F9FEFB;
+     color: midnightblue;    
+     display: block;
+     text-decoration: unset;
+}
+.anhdaidien {
+	 position: relative;
+}
+a:hover {
+	color: red;
+}
+
+#icon {
+	position: fixed;
+	right: 100px;
+	bottom: 10px;
+}
+#icon img {
+	width: 80px;
+}
+.style img {
+	width: 150px;
+	height: 145px;
+	border-radius: 50%;
+
+}
+.style {
+	/*background-color: white;*/ 
+	padding: 20px;
+	border-radius: 50%;	
+	position: absolute;
+	top: -110px;
+	left: 90px;
+}

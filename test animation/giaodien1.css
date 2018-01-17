@@ -1,0 +1,18 @@
+p {
+	font-size: 17px;
+}
+.test {
+	width: 150px;
+   display: inline-block;
+    margin: -10px 0 20px 850px;
+    padding: 3px 0 2px 0;
+    border: 0;
+    background-color: rgba(0,0,0,0.0);
+    position: relative;
+    animation: chuchay 5s linear 1s infinite alternate ;
+ }
+ @keyframes chuchay {
+ 	0%{right:0; color: black}
+ 	50%{right:200px; color: white;}
+ 	100%{right:200px; color: white;}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	      <title>CalculatorJQuery</title>
+   	      <meta charset="utf-8"/>
+   	      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+          
+   	</head>
+   	   <body>
+   	   	 <div id="about">
+   	  
+            <h3>CalculartorJQuery</h3>
+         
+        
+          	<input id="display" type="text"  placeholder="0"/>
+         
+          <div id="row">
+          	<button class="css exchange"">EX..</button>
+            <button class="css number" value="9" onclick="display.value+=this.value" >9</button>
+            <button class="css number" value="8" onclick="display.value+=this.value">8</button>
+            <button class="css number" value="7" onclick="display.value+=this.value">7</button>
+            <button class="css change">Change...</button>
+            <button class="css erase" onclick="display.value=value">CA</button>
+          </div>
+          <div id="row">
+          	<button class="css character" onclick="display.value=display.value**0.5">√</button>
+            <button class="css number" value="6" onclick="display.value+=this.value">6</button>
+            <button class="css number" value="5" onclick="display.value+=this.value">5</button>
+            <button class="css number" value="4" onclick="display.value+=this.value">4</button>
+            <button class="css sign" value="+" onclick="display.value+=this.value">+</button>
+            <button class="css sign" value="-" onclick="display.value+=this.value">-</button>
+          </div>
+          <div id="row">
+          	<button class="css character" onclick="display.value=display.value*display.value">x²</button>
+            <button class="css number" value="3" onclick="display.value+=this.value">3</button>
+            <button class="css number" value="2" onclick="display.value+=this.value">2</button>
+            <button class="css number" value="1" onclick="display.value+=this.value">1</button>
+            <button class="css sign" value="*" onclick="display.value+=this.value">x</button>
+            <button class="css sign" value="/" onclick="display.value+=this.value">÷</button>
+          </div>
+          <div id="row">
+          	<button class="css character"  onclick="display.value=display.value/100">%</button>
+            <button class="css number0" value="0" onclick="display.value+=this.value">0</button>
+            <button class="css kitu" value="." onclick="display.value+=this.value">.</button>
+            <button class="css kitu" value="(" onclick="display.value+=this.value">(</button>
+            <button class="css kitu" value=")" onclick="display.value+=this.value">)</button>
+          </div>
+          <button class="css equal" onclick="display.value = eval(display.value)">=</button>
+         </div>
+
+           <script src="js/jquery-3.2.1.min.js"></script>
+           <script type="text/javascript" src="js/script.js"></script>
+
+   	   </body>
+</html>
+

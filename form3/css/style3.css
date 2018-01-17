@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+	background-color: black;
+	color: white;
+}
+#tatca {
+	margin: 80px 0 0 450px;
+}
+h1 {
+	font-size: 35px;
+	margin-bottom: 40px;
+}
