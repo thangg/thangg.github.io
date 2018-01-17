@@ -1,0 +1,57 @@
+* { margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+img {
+	max-width: 100%;
+}
+ body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	/*font-size: 14px;*/
+	line-height: 1.4;
+	color: #333333;
+    overflow: scroll;
+}
+.baotat {
+	width: 1000px;
+	margin: auto;
+}
+.anh {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+     width: 1000px;
+    height: 450px;
+}
+
+@keyframes title {
+    0%  {background-color: #ffddf4; color: #06d17f;}
+    25%  {background-color: #ffaae3; color: #22f9a2;}
+    50%  {background-color: #fe77d3; color: #85fccc;}
+    75%  {background-color: #fe34bd; color: #b7fde1;}
+    100% {background-color: #cb018a; color: #e8fef5;}
+}
+
+
+h1 {
+    text-align: center;
+    color: #fe23b7;
+    line-height: 3em;
+    font-family: fantasy;
+    letter-spacing: 0.2em;
+    margin: -5px 0 15px 0;
+    animation: title 6s ease infinite;
+}
+p {
+	font-size: 20px;
+	background-color: #f3ffff;
+}
+div.biemmat {
+	background: none;
+}     
+
+
