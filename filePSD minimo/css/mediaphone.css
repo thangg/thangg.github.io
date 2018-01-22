@@ -1,0 +1,75 @@
+@media only screen and (max-width: 500px) {
+ .navbar-brand {
+    font-size: 30px;     
+}
+.banner img {
+    width: 100%;
+    height: 190px;
+}
+#doan1 {
+    margin-top: 30px;
+}
+#doan1 p {
+    font-size: 14px;
+    color: #626262;
+    padding: 0;
+}
+#doan1 h1 {
+    font-size: 24px;
+    color: #626262;
+    height: 50px;
+}
+#doan1 p {
+    font-size: 12px;
+    color: #626262;
+    padding: 0;
+}
+#row1, #row2, #row3 {
+    margin-top: 50px;
+}
+#column p {
+    padding: 10px 0px 5px 0px;
+    font-size: 14px;
+    color: #b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+}
+#column h1 {
+    font-size: 24px;
+}
+#contai .doanvan {
+    font-size: 12px;
+}
+#paragraph3 {
+    margin: 0;
+    height: 190px;
+}
+#paragraph3 h1 {
+    color: #333333;
+    font-size: 24px;
+    padding: 30px 0 50px 0;
+}
+footer {
+    margin-top: 30px;
+    height: 60px;   
+}
+#conten {
+    padding: 20px 0 0 15px;
+}
+.thehr {
+    border-top: 0.6px solid #000;
+    width: 180px;
+}
+#paragraph3 i {
+    margin-left: 20px;
+}
+#paragraph3 p {
+    font-size: 12px;
+} 
+.addflow {
+    padding-left: 10px;
+}
+.addpri {
+    padding-left: 10px;
+}
+
+   }
