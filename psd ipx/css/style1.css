@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {        /* tải font về */
+    font-family: segoeui;  /* đặt tên font */
+    src: url(Segoe_UI_Italic.ttf); /* lấy tên font vừa tải về */
+    font-weight: normal;  /* normal là bình thường */
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: segoeui;
+}
+
+.banner {
+    height: 1000px;
+    background-color: #090b1e;
+}
+
+.navbar {
+    margin-top: 20px;
+    height: 30px;
+}
+#introduce {
+    width: 45%;
+    float: left;
+    margin-top: 150px;
+}
+
+#introduce h1 {
+    font-size: 120px;
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(left, #f7297c 0%,#bd548f 50%,#2a60b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#cauvan2 {
+    color: #fff;
+    font-size: 16px;
+}
+#cauvan1 {
+    font-size: 20px;
+    color: #fff;
+    margin-top: -45px;
+    letter-spacing: 18px; /* khoảng cách kí tự*/
+    line-height: 80px;
+}
+#cauvan3 {
+    color: #fff;
+    font-size: 16px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 50px;
+    background: linear-gradient(to right, #f7297c 0%,#bd548f 50%,#2a60b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#introduce2 {
+    width: 55%;
+    float: left;
+}
+#introduce2 img {
+    float: right;
+}
+#banner2 {
+    margin-top: 120px;
+}
+
+#section1 {
+    height: 1000px;
+}
+#imgoutside {
+    margin-top: 220px;
+    /* margin-left: -100px; */
+    width: 270px;
+    height: 650px;
+    float: left;
+    position: absolute;
+}
+
+#product_introduction1 h1 {
+    font-size: 36px;
+    color: #181818;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 150px;
+}
+#row {
+    width: 100%;
+}
+#column1 {
+    width: 20%;
+    float: left;
+}
+#column2 {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+#column3 {
+    width: 20%;
+    float: left;
+}
+#column1 .paragraph {
+    margin-top: 75px;
+    text-align: right;
+    margin-bottom: 75px;
+}
+#column3 .paragraph {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+#column1 h3, #column3 h3 {
+    color: #181818;
+    font-size: 24px;
+}
+#column1 p, #column3 p {
+    color: #444444;
+    font-size: 16px;
+}
+
+#section2 {
+    height: 700px;
+    background-color: #090b1e;
+    position: relative;
+}
+
+#column h1 {
+    font-size: 36px;
+    color: #fff;
+    height: 70px;
+}
+#column p {
+    font-size: 16px;
+    color: #fff;
+    padding-top: 15px;
+}
+#column {
+    margin-top: 160px;
+}
+
+#stickerX {
+   position: absolute;
+   top: 490px;
+}
+
+#section3 {
+    height: 1000px;
+}
+
+#Introducing_the_app {
+    margin-top: 80px;
+}
+#text_introduce h1 {
+    color: #181818;
+    font-size: 36pt;
+}
+#text_introduce p {
+    color: #444444;
+    font-size: 16px;
+    padding-top: 20px;
+}
+#text_introduce {
+    padding-top: 230px;
+}
+.sticker_round1 {
+    width: 150px;
+    height: 150px;
+    background-color: #ee4f6f;
+    border-radius: 50%;
+    position: relative;
+    top: -850px;
+    left: 1400px;
+}
+.sticker_round2 {
+    width: 100px;
+    height: 100px;
+    background-color: #0136b8;
+    border-radius: 50%;
+    position: relative;
+    top: -1070px;
+    left: 1540px;
+}
+.sticker_round3 {
+    width: 55px;
+    height: 55px;
+    background-color: #d81985;
+    border-radius: 50%;
+    position: relative;
+    top: -1220px;
+    left: 1650px;
+}
+#review h1 {
+    text-align: center;
+    color: #181818;
+    font-size: 36pt;
+}
+
+#section4 {
+    height: 650px;
+}
+
+
+#section5 {
+    height: 1000px;
+}
+.columns1 {
+    text-align: center;
+}
+.price {
+    margin-top: 25px;
+}
+.price p {
+    color: #ff002e;
+    font-size: 24px;
+}
+.offerings h1 {
+    color: #181818;
+    font-size: 36px;
+    text-align: center;
+    height: 120px;
+}
+
+#section6 {
+    height: 400px;
+}
+#Donors {
+    text-align: center;
+}
+#Donors h1 {
+    height: 100px;
+    color: #181818;
+    font-size: 36px;
+}
+
+#Information {
+    height: 600px;
+    background-color: #090b1e;
+    color: #fff;
+}
+.content {
+    width: 50%;
+    text-align: center;
+    margin: 70px auto;
+    height: 170px;
+}
+.content h1 {
+    height: 50px;
+}
+.content > p {
+    font-size: 16px;
+}
+.conwrap {
+    font-size: 14px;
+    margin-top: 50px;
+}
+.conwrap address {
+    width: 70%;
+    float: left;
+    height: 60px;
+    padding-top: 20px;
+    border-radius: 5px 0 0 5px;
+    background: -webkit-linear-gradient(left, #af4c9c 0%,#e43e89 10%,#fa306c 34%,#de839f 60%,#3379c1 100%,#207cca 100%,#fc1f84 100%,#fc3691 100%,#fa4094 100%,#fc1f84 100%,#9096c2 100%,#9096c2 100%,#fc1f84 100%,#fc1f84 100%,#fa306c 100%,#fd1585 100%,#fc1f84 100%,#fc1f84 100%,#307dc5 100%,#fc1f84 100%,#9096c2 100%,#fc1f84 100%,#3379c1 100%,#9096c2 102%,#fc1f84 103%); /* Chrome10-25,Safari5.1-6 */
+}
+.conwrap p {
+    width: 30%;
+    float: left;
+    height: 60px;
+    padding-top: 20px;
+    border-radius: 0 5px 5px 0;
+    background: -webkit-linear-gradient(left, #fd1585 0%,#fc1f84 50%,#fa4094 100%,#fc1f84 100%,#fc1f84 100%,#fc3691 100%,#fc1f84 100%,#fc1f84 100%,#fd1585 100%,#fc1f84 100%,#fc1f84 100%,#fc1f84 100%,#fc1f84 100%,#fc1f84 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
+}
+#icon {
+    margin-top: 120px;
+    font-size: 14px;
+}
+#icon2 i {
+    color: #f46690;
+    padding: 6px 0 0 7px;
+    text-align: center;
+}
+#icon2 p {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+#icon2 {
+    margin-left: 300px;
+}
+.tember {
+    float: left;
+}
+.so1 {
+    width: 30%;
+}
+.so2 {
+    width: 15%;
+    word-spacing: 14px;
+}
+#executable {
+    margin-top: 60px;
+}
+
+#section0 {
+    height: 600px;
+}
+#slice {
+    height: 440px;
+    /* margin-top: 80px; */
+    width: 100%;
+}
+.item {
+    height: 300px;
+    width: 33.333%;
+    margin: 150px auto;
+    
+}
