@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+body {
+     color: #666666;
+     background-color: #fff;
+     font-family: fonttodayshop;
+
+}
+
+ @font-face {
+     font-family: fonttodayshop;
+     src: url(TodaySHOP-XLightItalic_44896.ttf);
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+    font-family: fontbruselo;
+    src: url(Bruselo-Script.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: fonttoday;
+    src: url(TodaySHOP-MediumItalic_44891.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: fonttimes;
+    src: url(Times-Bold-Italic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    height: 500px;
+}
+
+.banner {
+    position: relative; 
+}
+
+.banner1 {
+    position: absolute;
+}
+.banner1 img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+.menu {
+    position: relative;
+    top: 10px;
+    padding: 0 20px;
+}
+
+.col1 img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.col1 h3 {
+    color: #333333;
+    font-size: 16pt;
+}
+.col1 p {
+    color: #666666;
+    font-size: 14pt;
+}
+
+.part2 {
+    margin-top: 80px;
+}
+.part2 h1 {
+    color: #000000;
+    font-size: 20pt;
+    font-family: fonttoday;
+}
+.part2 h2 {
+    color: #000000;
+    font-size: 16pt;
+    font-family: fonttimes;
+}
+.part2 p {
+    font-size: 14pt;
+    position: absolute;
+    color: #000000;
+}
+.horizontal_line {
+    border-top: 1px solid #e7e7e7;
+}
+
+.horizontal_line::after {
+    content: "";
+    width: 5%;
+    border-top: 1px solid black;
+    display: block;
+}
+.sticker {
+    width: 85px;
+    height: 85px;
+    background-color: #ffd627;
+    border-radius: 50%;
+    position: relative;
+}
+.sticker .so1 {
+    font-size: 9.5pt;
+    left: 35px;
+    top: 7px;
+}
+.sticker .so2 {
+    font-family: fonttimes;
+    font-size: 51pt;
+    top: -4px;
+    left: 15px
+}
+.sticker .so3 {
+    font-family: fonttimes;
+    font-size: 39pt;
+    top: -2px;
+    left: 45px;
+}
+.sticker .so4 {
+    font-size: 12pt;
+    top: 51px;
+    left: 45px;
+}
+.khung1 {
+    width: 22%;
+    float: left;
+    margin: 25px auto;
+}
+.khung2 {
+    width: 78%;
+    float: left;
+    margin: 7px auto;
+}
+
+#part3 {
+    margin-top: 80px;
+}
+
+.cot1 h1 ,.cot2 h1, .cot3 h1, .cot4 h1 {
+    font-family: fonttoday;
+    color: #000000;
+    font-size: 16pt;
+    padding-bottom: 30px;
+}
+.cot1 p {
+    font-size: 14pt;
+    width: 90%;
+}
+.img-hang {
+    width: 25%;
+    float: left;
+}
+.text-hang {
+    width: 75%;
+    float: left;
+    margin-top: -18px;
+}
+.cot2 h2 {
+    font-size: 14pt;
+    color: #000000;
+}
+.cot2 p {
+    font-size: 14pt;
+    word-spacing: 7px;
+}
+.kengang {
+    border-top: 1px solid #e7e7e7;
+    margin: 100px 0 20px 0;
+    width: 85%;
+}
+.kengang::before {
+    content: "";
+    width: 15%;
+    border-top: 1px solid black;
+    display: block;
+}
+.cot3 h3 {
+    color: #000000;
+    font-size: 14pt;
+}
+.kengang2 {
+    border-top: 1px solid #e7e7e7;
+    margin: 40px 0 20px 0;
+    width: 90%
+}
+.kengang2::before {
+    content: "";
+    width: 15%;
+    border-top: 1px solid black;
+    display: block;
+}
+.cot3 p {
+    font-size: 14pt;
+    width: 80%;
+}
+.kengang3 {
+    border-top: 1px solid #e7e7e7;
+    margin: 20px 0 20px 0;
+}
+.kengang3::before {
+    content: "";
+    width: 13%;
+    border-top: 1px solid black;
+    display: block;
+}
+.cot4 p {
+    color: #000000;
+    font-size: 14pt;
+}
+
+footer {
+    margin-top: 80px;
+}
+.kengang5 {
+    border-top: 1px solid #e7e7e7;
+}
+.kengang5::before {
+    content: "";
+    width: 5%;
+    border-top: 1px solid black;
+    display: block;
+}
+.text-content {
+    margin-top: 20px;
+    font-size: 14pt;
+    margin: 20px auto auto 400px;
+    height: 60px;
+}
+.content {
+    float: left;
+    word-spacing: 6px;
+}
+.text-content .so2 {
+    color: #000000;
+    padding: 0 6px 0 6px;
+}
+
+#navbar1 {
+    font-size: 80px;
+    color: #fff;
+    font-family: fontbruselo;
+}
+.span11 {
+    background-color: #ffd627;
+    font-size:14pt;
+    color: #8d7302;
+    position: absolute;
+    top:55px;left: 504px;
+    word-spacing: 5px;
+}
+
+.span22 {
+    color: #000000;
+    font-size: 14pt;
+    background-color: #ffd627;
+    position: relative;
+    top: 44px;
+    left: 185px;
+}

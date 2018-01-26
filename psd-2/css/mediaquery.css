@@ -1,0 +1,66 @@
+@media only screen and (max-width: 500px) {
+    header {
+        height: 170px;
+    }
+
+    .col1 h3 {
+        margin-top: 8px;
+    }
+    
+    .col1 img {
+        margin-top: 15px;
+    }
+
+    #navbar1 {
+        font-size: 40px;
+    }
+    .text-content {
+        margin: 10px 0 0 0;
+        height: 0;
+        font-size: 12pt;
+    }
+    .khung1 {
+        width: 22%;
+        margin: 30px 0 30px -15px;
+    }
+
+    .khung2 {
+        width: 75%;
+        margin: 7px 0 0 15px;
+    }
+
+    .span11 {
+        position: absolute;
+        top: 175px;
+        left: 306px;
+        word-spacing: 2px;
+        font-size: 12pt;
+    }
+
+    #part3 {
+        margin-top: 30px;
+    }
+
+    .cot1 h1, .cot2 h1, .cot3 h1, .cot4 h1 {
+        padding: 0;
+    }
+
+    .cot1 p {
+        font-size: 12pt;
+        width: 100%;
+    }
+
+    .cot2, .cot3 {
+        margin-top: 35px;
+    }
+    
+    .kengang2 {
+        margin: -10px 0 20px 0;
+    }
+    
+    .span22 {
+        position: relative;
+        top: -7px;
+        left: 295px;
+    }
+}
