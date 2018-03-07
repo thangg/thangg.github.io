@@ -1,0 +1,195 @@
+#slider-Quangcao {
+    margin-top: -300px;
+    height: 800px;
+    /* width: 100%; */
+}
+
+#col1 img , #col2 img {
+    width: 100%;
+    height: 800px;
+    z-index: 40px;
+}
+
+.col-md-6 {
+    padding: 0;
+}
+
+#col1 {
+    width: 60%;
+    position: relative;
+}
+
+#col2 {
+    width: 40%;
+    overflow: hidden;
+}
+
+#col2 .test60 {
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: all 0.25s;
+}
+
+.test70 {
+    animation-name: out;
+    animation-duration: 0.25s;
+    /* animation-iteration-count:infinite; */
+}
+
+@keyframes out
+{
+from {opacity: 0.8; transform: scale(1.1);}
+to   {opacity: 1; transform: scale(1);}
+}
+
+#iconRight {
+     z-index: 20;
+     cursor: pointer;
+     position: absolute;
+     top: 45%;;
+     text-align: center;
+     opacity: 0;
+     left: 30px;
+}
+
+#iconRight a, #iconLeft a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #3d3352;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    padding-top: 6px;
+}
+
+#iconRight.test10 {
+    animation-duration: 0.3s;
+    animation-name: sangPhai;
+    opacity: 1;
+}
+
+@keyframes sangPhai {
+    from {left: 0; opacity: 1;};
+    to  {left: 30px; opacity: 1;};
+}
+
+#iconRight.test11 {
+    animation-duration: 0.3s;
+    animation-name: sangTrai;
+    left: 0;
+    opacity: 0;
+}
+
+@keyframes sangTrai {
+    from {left: 30px; opacity: 1;};
+    to   {left: 0; opacity: 0;};
+}
+
+#iconLeft {
+    z-index: 20;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;;
+    text-align: center;
+    right: 30px;
+    opacity: 0;
+}
+
+#iconLeft.test100 {
+    animation-duration: 0.3s;
+    animation-name: sangPhai100;
+    opacity: 1;
+}
+
+@keyframes sangPhai100 {
+    from {right: 0; opacity: 1;};
+    to  {right: 30px; opacity: 1;};
+}
+
+#iconLeft.test111 {
+    animation-duration: 0.3s;
+    animation-name: sangTrai111;
+    right: 0;
+    opacity: 0;
+}
+
+@keyframes sangTrai111 {
+    from {right: 30px; opacity: 1;};
+    to   {right: 0; opacity: 0;};
+}
+
+#iconRight a:hover, #iconLeft a:hover {
+    background-color: #e97244;
+    transition: all 0.3s linear;
+}
+
+ /* Hết phần icon ẩn hiện trái phải */
+
+ .Text-Qc {
+     position: absolute;
+     top: 45%;
+     left: 25%;
+     color: white;
+     text-align: center;
+     z-index: 0;
+ }
+
+.Text-Qc .text1 {
+    font-family: Roboto Condensed;
+    line-height: 67px;
+    font-size: 38px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.Text-Qc .text2 {
+    font-family: Roboto Condensed;
+    line-height: 67px;
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.text2 span {
+    font-weight: bold;
+    margin: 0 5px;
+ }
+
+.Text-Qc .text3 {
+    font-size: 180px;
+    font-family: serif;
+    letter-spacing: 5px;
+    margin: 0;
+    font-weight: 100;
+    line-height: 169px;
+}
+
+.text1 {
+    animation-name: runText1;
+    animation-duration: 2.5s;
+}
+
+@keyframes runText1 {
+    from {opacity: 0.2;}
+    to   {opacity: 1;}
+}
+
+.text2 {
+    animation-name: runText2;
+    animation-duration: 1.5s;
+    opacity: 1;
+    animation-delay: 1s;
+}
+
+@keyframes runText2 {
+    0% {transform: translateX(300px);opacity: 1;}
+    50% {transform: translateX(0);opacity: 1}
+    60% {transform: translateX(20px);opacity: 1}
+    80% {transform: translateX(-20px);opacity: 1}
+    90% {transform: translateX(10px);opacity: 1}
+    100%   {transform: translateX(0); opacity: 1}
+}
