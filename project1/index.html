@@ -9,9 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- link font gg -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styleMenu.css"/>
-    <link rel="stylesheet" type="text/css" href="css/styleSliderQC.css"/>
-    <link rel="stylesheet" type="text/css" href="css/styleFooter.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styleMenu.css"/>  <!-- css phần menu -->
+    <link rel="stylesheet" type="text/css" href="css/styleSliderQC.css"/> <!-- css phần slice quảng cáo -->
+    <link rel="stylesheet" type="text/css" href="css/styleProduct.css"/>   <!-- css phần sán phẩm -->
+    <link rel="stylesheet" type="text/css" href="css/styleProductNew.css"/>   <!-- css phần sán phẩm mới -->
+    <link rel="stylesheet" type="text/css" href="css/styleFooter.css"/> <!--  css phần cuối content -->
+    <link rel="stylesheet" media="only screen and (max-width: 500px)" href="css/styleiIterfaceMobile.css">
 </head>
 <body>
     <header>
@@ -25,20 +28,20 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" title="Logo"><img src="img/logo.png"></a>
+                        <a class="navbar-brand" href="index.html" title="Logo"><img src="img/logo.png"></a>
                       </div>
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           
                         <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#" title="Trang chủ" >TRANG CHỦ <span class="sr-only">(current)</span></a></li>
+                          <li class="nav-style"><a href="index.html" title="Trang chủ" >TRANG CHỦ <span class="sr-only">(current)</span></a></li>
                           <!-- hết trang chủ -->
-                          <li class="dropdown" id="menusuutap"> 
+                          <li class="dropdown nav-style" id="menusuutap"> 
                             <a href="#" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false" title="Bộ sưu tập">BỘ SƯU TẬP <span class="caret"></span></a>
                             <i class="fas fa-caret-up" id="iconHiden1"></i>
                           </li>
                            <!-- hết bộ sưu tập -->
-                          <li class="dropdown" id="menuSanpham">
+                          <li class="dropdown nav-style" id="menuSanpham">
                             <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" title="Sản phẩm">SẢN PHẨM<span class="caret"></span></a>
                             <i class="fas fa-caret-up" id="iconHiden2"></i>
 
@@ -52,17 +55,42 @@
 
                           </li>
                           <!-- hết Sản phẩm -->
-                          <li><a href="#" title="Tin tức">TIN TỨC</a></li>
+                          <li class="nav-style"><a href="#" title="Tin tức">TIN TỨC</a></li>
                           <!-- hết tin tức -->
-                          <li><a href="#" title="Giới thiệu">GIỚI THIỆU</a></li>
+                          <li class="nav-style"><a href="#" title="Giới thiệu">GIỚI THIỆU</a></li>
                           <!--hết giới thiệu -->
-                          <li class="dropdown">
-                            <a href="#" class="dangnhap"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-                          </li>
-                          <!-- hết đăng nhập -->
-                          <li><a class="timkiem" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+
+                          <li class="dropdown nav-style" id="login-mobile">
+                            <button class="dangnhap">
+                                <i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span>
+                                <div class="contain-login">
+                                   <p><a href=""> Đăng nhập</a></p>
+                                   <p><a href="">Tài khoản</a></p>
+                                   <p><a href="">Giỏ hàng</a></p>
+                                </div>
+                            </button>
+                            
+                          </li> <!-- Hết tài khoản đăng nhập -->
+
+                          <li class="nav-style" id="search-mobile">
+                              <button class="timkiem">
+                                    <i class="fa fa-search" aria-hidden="true"></i>     
+                              </button>
+                              <div class="search">
+                                    <input type="text" placeholder="Tìm kiếm ...">
+                                    <a href="" class="search-i">
+                                         <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                              </div>
+                         </li>
                           <!-- hết tìm kiếm -->
-                          <li><a href="#" class="giohang"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                          <li class="nav-style" id="cart-mobile">
+                              <a href="#" class="giohang">
+                                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> <br>
+                                  <span style="font-size: 12px;">Đã chọn</span>
+                                </a>
+                          </li>
                           <!-- hết giỏ hàng -->
                         
                       </div><!-- /.navbar-collapse -->
@@ -107,7 +135,7 @@
                             <h3>Bán Chạy</h3>
                             <div class="cotcon">
                             <div class="hang1">
-                                <div class="imghang1"><img src="img/anh4.jpg"></div>
+                                <div class="imghang1 img-responsive"><img src="img/anh4.jpg"></div>
                                 <div class="texthang1">
                                     <h3><a href="">Nước Hoa Hồng The Rice</a></h3>
                                     <p>538.000₫</p>
@@ -115,7 +143,7 @@
                             </div>
 
                             <div class="hang1">
-                                    <div class="imghang1"><img src="img/anh5.jpg"></div>
+                                    <div class="imghang1 img-responsive"><img src="img/anh5.jpg"></div>
                                     <div class="texthang1">
                                         <h3><a href="">Dầu Xả Theraphy System</a></h3>
                                         <p>60.000₫</p>
@@ -137,29 +165,389 @@
         <div class="sliderQC1">
             <div class="row">
                 <div class="col-md-6" id="col1">
-                    <img src="img/anh2.jpg" class="img-responsive">
 
-                    <div id="iconRight"><a href=""><i class="fas fa-angle-left"></i></a></div>
-                    <div id="iconLeft"><a href=""><i class="fas fa-angle-right"></i></a></div>
+                        <div id="iconRight">
+                            <button  onclick="plusDivs(1)">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                        </div>
 
-                    <div class="Text-Qc">
-                        <p class="text1">Xu Hướng</p>
-                        <h3 class="text2"><span> TÓC ĐẸP</span></h3>
-                        <p class="text3">2018</p>
+                        <div id="iconLeft"  onclick="plusDivs(-1)">
+                            <button>
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+
+                    <div class="slice">
+                            <div class="col1-slide1">
+                                    <img src="img/anh2222.jpg" class="img-responsive">      
+                                    <div class="Text-Qc">
+                                        <p class="text1">Xu Hướng</p>
+                                        <h3 class="text2"><span> TÓC ĐẸP</span></h3>
+                                        <p class="text3">2018</p>
+                                    </div>
+                            </div> <!-- hết cột 1 slice -->
+        
+                            <div class="col1-slide1">
+                                    <img src="img/anh33.jpg" class="img-responsive">      
+                                    <div class="Text-Qc">
+                                        <p class="text21"> <span> GIẢM GIÁ </span> </p>
+                                        <h3 class="text22"> LÊN ĐẾN </h3>
+                                        <p class="text23">35%</p>
+                                    </div> 
+                             </div>  <!-- hết cột 2 sclie -->
                     </div>
-                </div>
+
+                </div>  <!-- Hết cột 1 -->
 
                 <div class="col-md-6" id="col2">
-                        <a href=""> <img src="img/anh3.png"> </a>
-                    </div>
+                        <a href=""> <img src="img/anh3.png" class="img-responsive"> </a>
+                </div> <!-- hết cột 2 -->
+
             </div>          
         </div>
     </section>  <!-- hết slider chạy quảng cáo -->
 
-    <!-- <footer class="container">
-         <div class="row">
+    <section class="container" id="PageProduct">
+        <div id="Product-Promotion">
+          <div class="col-md-6" id="col-md6">
+            <div class="Promotion1">
+                <h1>KHUYẾN MẠI</h1>
+
+                <div class="slice2">
+
+                    <div class="sclice-sanpham">
+                        <div class="sale-img">
+                            <img src="img/anh6.jpg" title="Xịt khoáng Wonder Pore Freshner" class="img-responsive">
+                            <span class="sale-box">
+                                    <span class="label-sale">Giảm</span>
+                            </span>
+                        </div>
+                        <div class="Text-nameSP">
+                            <a href=""> XỊT KHOÁNG WONDER PORE FRESHNER </a> <br>
+                            <p> <span> 400.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 420.000₫ </span> </p> <br>
+                            <div class="hien-quick">
+                                    <a href="" class="Quick-View"> + XEM NHANH </a>
+                               </div>
+                        </div>
+                    </div>   <!-- slice box 1 -->
+    
+    
+                    <div class="sclice-sanpham">
+                        <div class="sale-img">
+                            <img src="img/anh5.jpg" title="Xịt khoáng Wonder Pore Freshner" class="img-responsive">
+                            <span class="sale-box">
+                                    <span class="label-sale">Giảm</span>
+                            </span>
+                        </div>
+                        <div class="Text-nameSP">
+                            <a href=""> DẦU XẢ THẺAPHY SYSTEM </a> <br>
+                            <p> <span> 60.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 80.000₫ </span> </p> <br>
+                            <div class="hien-quick">
+                                    <a href="" class="Quick-View"> + XEM NHANH </a>
+                               </div>
+                        </div>
+                    </div>     <!-- slice box 2 -->
+    
+                    <div class="sclice-sanpham">
+                        <div class="sale-img">
+                            <img src="img/anh4.jpg" title="Xịt khoáng Wonder Pore Freshner" class="img-responsive">
+                            <span class="sale-box">
+                                    <span class="label-sale">Giảm</span>
+                            </span>
+                        </div>
+                        <div class="Text-nameSP">
+                            <a href=""> NƯỚC HOA HỒNG THE RICE </a> <br>
+                            <p> <span> 538.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 600.000₫ </span> </p> <br>
+                            <div class="hien-quick">
+                                    <a href="" class="Quick-View"> + XEM NHANH </a>
+                               </div>
+                        </div>
+                    </div>  <!-- slice box 3 -->
+
+                </div> <!-- hết slice 2 -->
+
+            </div>
+          </div> 
+           <!-- hết cột 1 phần sản phẩm  -->
+          <div class="col-md-6" id="col-md66">
+            <div class="Promotion2">
+                <h1>SẢN PHẨM NỔI BẬT</h1>
+                <div class="Productsp sanpham1">
+                    <img src="img/sp1.jpg" title="Gôm tóc RX4" class="img-responsive"> <br>
+                    <a href=""> Gôm tóc RX4 </a> <br>
+                    <p> 340.000₫ </p> <br>
+                    <div class="hien-quick">
+                         <a href="" class="Quick-View"> + XEM NHANH </a>
+                    </div>
+                   
+                </div>
+
+                <div class="Productsp sanpham2">
+
+                    <div class="sale-img">
+                        <img src="img/sp2.jpg" title="Dầu xả Theraphy System" class="img-responsive">
+                        <span class="sale-box">
+                                <span class="label-sale">Giảm</span>
+                        </span>
+                    </div> <br>
+
+                    <a href=""> DẦU XẢ THERAPHY SYSTEM </a> <br>
+                    <p> <span> 60.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 80.000₫ </span> </p> <br>
+                    <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                </div>
+                
+                <div class="Productsp sanpham3">
+
+                    <div class="sale-img">
+                        <img src="img/sp3.jpg" title="Xịt khoáng Wonder Pore Freshner" class="img-responsive">
+                        <span class="sale-box">
+                                <span class="label-sale">Giảm</span>
+                        </span>
+                    </div> <br>
+                   
+                    <a href=""> XỊT KHOÁNG WONDER PORE FRESHNER </a> <br>
+                    <p> <span> 400.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 420.000₫ </span> </p> <br>
+                    <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                </div>
+
+                <div class="Productsp sanpham4">
+                    <img src="img/sp4.jpg" title="Nước hoa hồng Smothing" class="img-responsive"> <br>
+                    <a href=""> NƯỚC HOA HỒNG SMOTHING </a> <br>
+                    <p> 250.000₫ </p> <br>
+                    <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                </div>
+
+                <div class="Productsp sanpham5 pdmargin">
+                    <img src="img/sp5.jpg" title="Phấn nền Cream pact" class="img-responsive"> <br>
+                    <a href=""> PHẤN NỀN CREAM PACT </a> <br>
+                    <p> 900.000₫ </p> <br>
+                    <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                </div>
+
+                <div class="Productsp sanpham6 pdmargin">
+                    <img src="img/sp6.jpg" title="Phấn phủ chống nắng" class="img-responsive"> <br>
+                    <a href=""> PHẤN PHỦ CHỐNG NẮNG </a> <br>
+                    <p> 800.000₫ </p> <br>
+                    <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                </div>
+
+                <div class="Productsp sanpham7 pdmargin">
+                    <img src="img/sp7.jpg" title="Kem chống nhăn Laneige" class="img-responsive"> <br>
+                    <a href=""> KEM CHỐNG NHĂN LANEIGE </a> <br>
+                    <p> <span> 555.000₫ </span> </p> <br>
+                    <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                </div>
+
+                <div class="Productsp sanpham8 pdmargin">
+                    
+                    <div class="sale-img">
+                        <img src="img/sp8.jpg" title="Nước hoa hồng The Rice" class="img-responsive">
+                        <span class="sale-box">
+                                <span class="label-sale">Giảm</span>
+                        </span>
+                    </div> <br>
+
+                    <a href=""> NƯỚC HOA HỒNG THE RICE </a> <br>
+                    <p> <span>  538.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 600.000₫ </span> </p> <br>
+                    <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                </div>
+                
+            </div>
+         </div>    <!-- hết cột 2 phần sản phẩm -->
+
+        </div>  <!-- end Product-Promotion -->
+
+    </section>  <!-- end PageProduct -->
+
+    <article id="img-effect" class="container"> <!-- Quảng Cáo XU Hướng-->
+        <div class="col-md-6">
+            <div class="effect">
+                <a href="">
+                    <img src="img/anhsua.png" alt="ảnh nền" class="img-responsive">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="effect">
+                <a href="">
+                    <img src="img/anh11.png" alt="ảnh nền" class="img-responsive">
+                </a>
+            </div>
+        </div>
+       </article>  <!--  Hết Quảng Cáo XU Hướng-->
+     
+    <section class="container"> <!-- SẢN PHẨM MỚI, THƯƠNG HIỆU, TIN TỨC.-->
+
+       <div id="ProductNew"> <!-- SẢN PHẨM MỚI -->
+           <h1>SẢN PHẨM MỚI</h1>
+           <div id="allPrNew">
+             <div class="col-md-3">  
+                <div class="ProductNew-row ProductNew-row1">
+                    
+                        <img src="img/sp2.jpg" title="Dầu xả Theraphy System" class="img-responsive">
+                        <span class="sale-box">
+                            <span class="label-sale">Giảm</span>
+                        </span>
+                        <br>
+    
+                        <div id="Product-Promotion">
+                           <a href=""> DẦU XẢ THERAPHY SYSTEM </a> <br>
+                           <p> <span> 60.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 80.000₫ </span> </p> <br>
+                           <div class="hien-quick">
+                                <a href="" class="Quick-View"> + XEM NHANH </a>
+                           </div>
+                           
+                            </span>
+                        </div>
+                 </div>
+           </div>
+
+           <div class="col-md-3">
+                <div class="ProductNew-row ProductNew-row2">
+                        <img src="img/sp7.jpg" title="Kem chống nhăn Laneige" class="img-responsive"> <br>
+                         <div id="Product-Promotion">
+                            <a href=""> KEM CHỐNG NHĂN LANEIGE </a> <br>
+                            <p> 555.000₫ </p> <br>
+                            <div class="hien-quick">
+                                    <a href="" class="Quick-View"> + XEM NHANH </a>
+                               </div>
+                        </div>
+                    </div>
+           </div>
+           
+           <div class="col-md-3">
+                 <div class="ProductNew-row ProductNew-row3">
+                    <img src="img/sp4.jpg" title="Nước hoa hồng Smothing" class="img-responsive"> <br>
+                        <div id="Product-Promotion">
+                            <a href=""> NƯỚC HOA HỒNG SMOTHING </a> <br>
+                            <p> 250.000₫ </p> <br>
+                            <div class="hien-quick">
+                                    <a href="" class="Quick-View"> + XEM NHANH </a>
+                               </div>
+                        </div>
+                </div>
+           </div>
+           
+           <div class="col-md-3">
+               <div class="ProductNew-row ProductNew-row4">
+
+                    <img src="img/sp8.jpg" title="Nước hoa hồng The Rice" class="img-responsive">
+                    <span class="sale-box">
+                        <span class="label-sale">Giảm</span>
+                    </span>
+                    <br>
+
+                    <div id="Product-Promotion">
+                       <a href=""> NƯỚC HOA HỒNG THE RICE </a> <br>
+                       <p> <span>  538.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 600.000₫ </span> </p> <br>
+                       <div class="hien-quick">
+                            <a href="" class="Quick-View"> + XEM NHANH </a>
+                       </div>
+                    </div>
+                </div>
+           </div>
+         </div>
+
+       </div> <!-- HẾT SẢN PHẨM MỚI -->
+
+       <div id="trademark-news">
+           <div class="col-md-6">
+               <h1>THƯƠNG HIỆU</h1>
+               <div class="trademard">
+
+                   <div class="row1">
+
+                       <div class="logo col-md-4">
+                           <a href=""><img src="img/logo1.png" title="vender1" class="img-responsive"></a>
+                       </div>
+                       <div class="logo col-md-4">
+                            <a href=""><img src="img/logo2.png" title="vender2" class="img-responsive"></a>
+                        </div>
+                        <div class="logo col-md-4">
+                           <a href=""><img src="img/logo3.png" title="vender3" class="img-responsive"></a>
+                       </div>
+
+                   </div> <!-- Hết hàng 1 Thương hiệu-->
+
+                   <div class="row2">
+
+                        <div class="logo col-md-4">
+                            <a href=""><img src="img/logo4.png" title="vender4" class="img-responsive"></a>
+                        </div>
+                        
+                        <div class="logo col-md-4">
+                            <a href=""><img src="img/logo5.png" title="vender5" class="img-responsive"></a>
+                        </div>
+                        <div class="logo col-md-4">
+                             <a href=""><img src="img/logo6.png" title="vender6" class="img-responsive"></a>
+                         </div>
+
+                    </div> <!-- Hết hàng 2 Thương hiệu-->
+
+               </div> 
+
+           </div> <!-- hết cột 1 phần thương hiệu và tin tức-->
+           
+           <div class="col-md-6">
+                <h1>TIN TỨC</h1>
+                <div class="news">
+                    <div class="col-md-6">
+                        <div class="news1">
+                           <img src="img/img-tintuc1.jpg" title="tóc đẹp phù hợp từng khuân mặt" class="img-responsive">
+                           <h4>
+                               <a href="">TÓC ĐẸP PHÙ HỢP TỪNG KHUÂN MẶT</a>
+                           </h4>
+                           <p>Bạn đang ấp ủ một ý định thay đổi diện mạo mới cho bản thân mình, và bạn không biết bắt đấu từ đâu. Hãy đến với Leo Hair...</p>
+                        </div>
+                    </div> <!-- hết cột 1 tin tức -->
+
+                    <div class="col-md-6">
+                        <div class="news2">
+                            <img src="img/img-tintuc2.jpg" title="7 cách để có mái tóc đẹp" class="img-responsive">
+                            <h4>
+                                <a href="">7 CÁCH ĐỂ CÓ MÁI TÓC ĐẸP</a>
+                            </h4>
+                            <p>Không cần đến những loại dưỡng tóc hay phương pháp chăm sóc đắt tiền, bạn hoàn toàn có thể tận dụng chính những sản phẩm có...</p>
+                        </div>
+                    </div>
+                </div>
+           </div> <!-- hết phần tin tức-->
+
+       </div> 
+        
+    </section> <!-- HẾT SẢN PHẨM MỚI, THƯƠNG HIỆU, TIN TỨC -->
+ 
+    <footer>   <!-- phần content-end -->
+        <div class="container">
+            <article class="hair-connective"> <!-- connective Page -->
+                <div class="connective-center">
+                        <a href="" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" title="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="" title="google"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="" title="linhtinh"><i class="fab fa-buromobelexperte"></i></a>
+                </div>
+           </article>
+              <!-- end connective Page -->
+
+         <div class="row2">  <!-- contact -->
              <div class="col-md-4">
-                 <div class="cot1ft">
+                 <div class="cot1-content">
                      <h4>HỖ TRỢ</h4>
                      <div class="supportive">
                          <ul>
@@ -172,32 +560,50 @@
                          </ul>
                      </div>
                  </div>
-                </div>
+                </div>  <!-- end supportive -->
 
                 <div class="col-md-4">
-                    <div class="cot1ft">
-                        <h3>LIÊN HỆ</h3>
+                    <div class="cot1-content">
+                        <h4>LIÊN HỆ</h4>
                         <p>Xây dựng website bán hàng mạnh mẽ, hiệu quả thật sự dễ dàng với giải pháp thương mại điện tử của Leotheme.</p>
-                        <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i><span>Địa chỉ: Số 83, ngõ 2, đại lộ Thăng Long - Mễ Trì - Hà Nội</span></a>
-                        <a href=""><i class="fa fa-phone" aria-hidden="true"></i><span>Di động: 01662760124</span></a>
-                        <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: nguyenvanthang52999@gmail.com</span></a>
+                        <ul class="list">
+                            <li>
+                                <a class="icon-contact"><i class="fa fa-map-marker fa2" aria-hidden="true"></i></a>
+                                Địa chỉ: Số 5, ngõ 2, Nguyễn Đình Chiểu - Hà Nội
+                            </li>
+                            <li>
+                                <a class="icon-contact"><i class="fa fa-phone fa2" aria-hidden="true"></i></a>
+                                Di động: 01662760124
+                            </li>
+                            <li>
+                                <a class="icon-contact"><i class="fas fa-envelope fa2"></i></a>
+                                Email: <span style="color:#e97244;"> nguyenvanthang52999@gmail.com </span>
+                            </li>
+                        </ul>
+                    
                     </div>
-                </div> 
+                </div>  <!-- end liên kết -->
             
                 <div class="col-md-4">
-                        <div class="cot1ft">
-                            <h3>TIN TỨC MỚI</h3>
+                        <div class="cot1-content">
+                            <h4>TIN TỨC MỚI</h4>
                             <p>Nhập vào email của bạn để đăng ký nhận thông tin mới nhất về sản phẩm, giảm giá...</p>
-                            <input type="text" placeholder="Nhập email của bạn">
-                            <a href="">THEO DÕI</a>
+                            <form action="link">                               
+                                <input type="email" class="follow" placeholder="Nhập email của bạn...">
+                                <input type="submit" value="Theo dõi" class="submit-follow">
+                            </form>
                         </div>
-                </div> 
+                </div> <!-- end tin tức mới -->
 
+        </div>  <!--end contact -->
+
+        <div id="pays">
+            <img src="img/anh30.png" class="img-responsive"/>
         </div>
-        <div>
-            <img src="img/anh30.png"/>
-        </div>
-    </footer> -->
+
+        </div>  <!-- END -->
+        
+    </footer>
      
     <div id="backTop">
         <a href="#top" class="scrollToTop">Scroll To Top

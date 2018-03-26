@@ -1,0 +1,106 @@
+.effect {
+    overflow: hidden;
+}
+
+.effect img {
+    width: 552px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.effect img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+    opacity: 0.9;
+}
+
+#img-effect{
+    padding-top: 20px;
+}
+
+.effect .effect00 {
+    transform: scale(1);
+    transition: all 0.2s linear;
+    opacity: 1;
+}
+
+#ProductNew {
+    padding-top: 15px;
+}
+
+.row1 .logo, .row2 .logo {
+    padding-left: 5px;
+}
+
+.row1 .logo a, .row2 .logo a{
+    display: block;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+
+.news .news1, .news .news2 {
+    width: 92%;
+    margin: auto;
+}
+
+.news h4 a {
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.news p {
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+}
+.logo {
+    position: relative;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 170px;
+    height: 94px;
+    border-top: 1px solid #e97244;
+    border-bottom: 1px solid #e97244;
+    transform: scaleX(0);
+    z-index: 1;
+    transition: all 0.4s;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 170px;
+    height: 94px;
+    border-left: 1px solid #e97244;
+    border-right: 1px solid #e97244;
+    transform: scaleY(0);
+    transition: all 0.4s;
+}
+
+.logo:hover::before {
+    transform: scaleX(1);
+}
+
+.logo:hover::after {
+    transform: scaleY(1);
+}
+
+.logo img {
+    filter: grayscale(100%);
+}
+
+.logo:hover img {
+    filter: grayscale(0);
+}

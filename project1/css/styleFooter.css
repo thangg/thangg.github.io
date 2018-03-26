@@ -1,21 +1,111 @@
-footer .cot1ft h4 {
-    font-size: 18px;
+footer {
+    margin-top: 40px;
+}
+
+.hair-connective {
+    height: 80px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border-bottom: 5px solid #E97244;
+    margin-bottom: 50px;
+}
+
+
+.connective-center {
+   text-align: center;
+}
+
+.connective-center > a {
+    vertical-align: middle;
+    transition: 400ms;
+    color: #aab2bd;
+    font-size: 17px;
+    margin: 20px 50px 0 0;
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    text-align: center;
+}
+
+.connective-center > a:hover {
+    color: #e97244;
+    border-radius: 50%;
+    border: 1px solid #e97244;
+}
+
+li {
+    line-height: 30px;
+    padding-right: 20px;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    font-size: 13px;
+}
+
+.row2 .cot1-content h4 {
+    position: relative;
+    padding: 10px 0 20px 0;
+    font-family: Roboto Condensed;
+    font-size: 18px;
     text-transform: uppercase;
     margin: 0;
     font-weight: normal;
     color: #000;
 }
 
-.supportive > ul {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
+.row2 .cot1-content a, .row2 .cot1-content p {
+    font-size: 13px;
 }
-.supportive > ul > li >a {
-    color: #000;
+
+.row2 .cot1-content a:hover {
+    color: #e97244;
     text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.row2 .cot1-content .icon-contact {
+    color: #e97244;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #edefe7;
+    margin: 10px 5px 0px 0;
+}
+
+.cot1-content .list > li:hover .icon-contact {
+    border: 2px solid #e97244;
+    transition: all 0.3s;
+}
+
+.fa2 {
+    margin: 3px;
+}
+
+.cot1-content .follow {
+    background-color: #f4f4f4;
+    border-color: #f4f4f4;
+    box-shadow: none;
+    padding-left: 20px;
+    margin: 10px 0 25px 0;
+    width: 100%;
+    font-size: 13px;
+    height: 32px;
+    font-family: Roboto;
+    border-radius: 5px 5px;
+}
+
+.submit-follow {
+    width: 38%;
+    height: 30px;
+    background-color: #e97244;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-family: Roboto;
+    line-height: 18px;
+}
+
+#pays img {
+    margin-top: 30px;
 }

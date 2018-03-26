@@ -67,14 +67,18 @@ $('#col1 img, #iconLeft').mouseleave(function(){
 });
     // Hết slide ẩn hiện bên phải
 
+$('.effect img').mouseleave(function(){
+     
+    $('.effect img').addClass('effect00');
+})
 
 
-
-            // Phần back to top
 
     $(document).ready(function(){
-
+          
         
+
+         // Phần back to top
 
         //Check to see if the window is top if not then display button
         $(window).scroll(function(){
@@ -90,5 +94,68 @@ $('#col1 img, #iconLeft').mouseleave(function(){
             $('html, body').animate({scrollTop : 0},600);
             return false;
         });
-    });
-        // hết back to top
+                    
+    })
+    //    Hết back to top
+
+$(".dangnhap").click(function(){
+    $(".contain-login").slideToggle();
+});
+//  Hết onclick đăng nhập
+
+$(".timkiem").click(function(){
+    $(".search").slideToggle();
+});
+//   hết onclick tìm kiếm
+
+var slideIndex = 0;
+carousell();
+
+function carousell() {
+    var i;
+    var x = document.getElementsByClassName("col1-slide1");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousell, 7000); 
+};
+//   hết hiệu ứng slice chạy liên tục slice1
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("col1-slide1");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+};
+
+
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("sclice-sanpham");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+//   hết hiệu ứng slice chạy slice2    

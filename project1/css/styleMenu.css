@@ -7,7 +7,10 @@
 }
 
         /* phần menu */
-
+a {
+    color: #000;
+    text-decoration: none;
+}
 .navbar-default {
     border-bottom: 1px solid #e97244;
     padding: 0px 25px 0 25px;
@@ -51,7 +54,8 @@
     color: #fff;
     background-color: #e97244;
     font-size: 30px;
-   margin-top: -8px;
+    margin-top: -20px;
+    height: 80px;
 }
 
 .container-fluid {
@@ -207,7 +211,7 @@ li#menuSanpham:hover #iconHiden2, li#menusuutap:hover #iconHiden1 {
     padding-top: 20px;
 }
 
-.sanphamAn p {
+.sanphamAn p, .contain-login p {
     color: #000;
     font-weight: normal;
     font-size: 12px;
@@ -215,12 +219,12 @@ li#menuSanpham:hover #iconHiden2, li#menusuutap:hover #iconHiden1 {
     padding-left: 40px;
 }
 
-.sanphamAn p a, .cot a {
+.sanphamAn p a, .cot a, .contain-login p a {
     color: #000;
     text-decoration: none;
 }
 
-.sanphamAn p a:hover, .cot a:hover {
+.sanphamAn p a:hover, .cot a:hover, .contain-login p a:hover {
     color: #e97244;
 }
 
@@ -287,3 +291,79 @@ li#menuSanpham:hover #iconHiden2, li#menusuutap:hover #iconHiden1 {
 }
 
       /* Hết back top top */
+
+.dangnhap {
+    background-color: transparent;
+}
+
+.dropdown .dangnhap {
+    width: 55px;
+    height: 50px;
+    border: 1px solid #f2f2f2;
+}
+
+.dropdown .dangnhap:hover {
+    border: 1px solid #c8d3d2;
+    transition: 0.2s;
+}
+
+.contain-login {
+    top: 83%;
+    z-index: 1;
+    display: none;
+    min-width: 160px;
+    padding: 10px;
+    list-style: none;
+    font-size: 13px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.195);
+    left: -105px;
+    position: absolute;
+}
+
+.contain-login p {
+    padding-left: 0;
+    margin: 0;
+}
+
+.timkiem {
+    width: 40px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.search {
+    top: 83%;
+    z-index: 1;
+    /* display: none; */
+    min-width: 160px;
+    padding: 10px;
+    list-style: none;
+    font-size: 13px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.195);
+    left: -170px;
+    position: absolute;
+    display: none;
+}
+
+.search input {
+    width: 190px;
+    padding-left: 10px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+}
+
+.search-i {
+    position: absolute;
+    top: 23%;
+    z-index: 1;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    background-color: #e97244;
+    color: #fff;
+    text-align: center;
+}

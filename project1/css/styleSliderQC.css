@@ -7,14 +7,13 @@
 #col1 img , #col2 img {
     width: 100%;
     height: 800px;
-    z-index: 40px;
 }
 
 .col-md-6 {
     padding: 0;
 }
 
-#col1 {
+.sliderQC1 .row #col1 {
     width: 60%;
     position: relative;
 }
@@ -25,8 +24,8 @@
 }
 
 #col2 .test60 {
-    transform: scale(1.1);
-    opacity: 0.8;
+    transform: scale(1.05);
+    opacity: 0.9;
     transition: all 0.25s;
 }
 
@@ -38,7 +37,7 @@
 
 @keyframes out
 {
-from {opacity: 0.8; transform: scale(1.1);}
+from {opacity: 0.8; transform: scale(1.05);}
 to   {opacity: 1; transform: scale(1);}
 }
 
@@ -46,13 +45,13 @@ to   {opacity: 1; transform: scale(1);}
      z-index: 20;
      cursor: pointer;
      position: absolute;
-     top: 45%;;
+     top: 360px;;
      text-align: center;
      opacity: 0;
      left: 30px;
 }
 
-#iconRight a, #iconLeft a {
+#iconRight button, #iconLeft button {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -60,7 +59,6 @@ to   {opacity: 1; transform: scale(1);}
     width: 40px;
     height: 40px;
     display: inline-block;
-    padding-top: 6px;
 }
 
 #iconRight.test10 {
@@ -90,7 +88,7 @@ to   {opacity: 1; transform: scale(1);}
     z-index: 20;
     cursor: pointer;
     position: absolute;
-    top: 45%;;
+    top: 360px;;
     text-align: center;
     right: 30px;
     opacity: 0;
@@ -119,7 +117,7 @@ to   {opacity: 1; transform: scale(1);}
     to   {right: 0; opacity: 0;};
 }
 
-#iconRight a:hover, #iconLeft a:hover {
+#iconRight button:hover, #iconLeft button:hover {
     background-color: #e97244;
     transition: all 0.3s linear;
 }
@@ -168,28 +166,117 @@ to   {opacity: 1; transform: scale(1);}
     line-height: 169px;
 }
 
-.text1 {
+.text1, .text21 {
     animation-name: runText1;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 @keyframes runText1 {
-    from {opacity: 0.2;}
-    to   {opacity: 1;}
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100%   {opacity: 1;}
 }
 
 .text2 {
     animation-name: runText2;
-    animation-duration: 1.5s;
-    opacity: 1;
-    animation-delay: 1s;
+    animation-duration: 2s;
 }
 
 @keyframes runText2 {
-    0% {transform: translateX(300px);opacity: 1;}
-    50% {transform: translateX(0);opacity: 1}
-    60% {transform: translateX(20px);opacity: 1}
-    80% {transform: translateX(-20px);opacity: 1}
-    90% {transform: translateX(10px);opacity: 1}
-    100%   {transform: translateX(0); opacity: 1}
+    0% {transform: translateX(6000px)}
+    80% {transform: translateX(0);}
+    85% {transform: translateX(25px)}
+    90% {transform: translateX(-25px)}
+    95% {transform: translateX(15px);}
+    100% {transform: translateX(0);}
+}
+
+.text3 {
+    animation-name: runText3;
+    animation-duration: 3.5s;
+}
+
+@keyframes runText3 {
+    0% {transform: translateX(8000px)}
+    80% {transform: translateX(0)}
+    85% {transform: translateX(25px)}
+    90% {transform: translateX(-25px)}
+    95% {transform: translateX(15px);}
+    100% {transform: translateX(0);}
+}
+
+
+.slice {
+	position: relative;
+}
+
+.slice .col1-slide1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.Text-Qc .text21 {
+    font-family: Roboto Condensed;
+    line-height: 67px;
+    font-size: 54px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.Text-Qc .text21 span {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.Text-Qc .text22 {
+    font-family: Roboto Condensed;
+    line-height: 67px;
+    font-size: 54px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.Text-Qc .text23 {
+    color: #fff;
+    font-size: 185px;
+    font-family: serif;
+    letter-spacing: 5px;
+    margin: 0;
+    font-weight: 100;
+    line-height: 169px;
+}
+
+.text22 {
+    animation-name: runText22;
+    animation-duration: 2s;
+}
+
+@keyframes runText22 {
+    0% {transform: translateY(-6000px)}
+    80% {transform: translateY(0)}
+    85% {transform: translateY(15px)}
+    90% {transform: translateY(-15px)}
+    95% {transform: translateY(10px);}
+    100% {transform: translateY(0);}
+}
+
+.text23 {
+    animation-name: runText23;
+    animation-duration: 3.5s;
+}
+
+@keyframes runText23 {
+    0% {transform: translateY(8000px)}
+    90% {transform: translateY(0)}
+    83% {transform: translateY(20px)}
+    95% {transform: translateY(-10px)}
+    97% {transform: translateY(15px);}
+    100% {transform: translateY(0);}
 }
