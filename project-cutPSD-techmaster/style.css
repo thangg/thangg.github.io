@@ -1,0 +1,56 @@
+.login2background{    
+    background-image: url(img-2.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.loginbox{  
+    background: white;
+    color: black;    
+    margin-top: 15%;
+    margin-left: 25%;
+    left: 0;
+    padding: 40px;   
+    box-shadow: 0 14px 143px 83px grey;
+    border-radius:5px;
+
+}
+.logo{
+    width: 170px; 
+    margin-left: 10%;
+}
+@media (max-width:767px) {
+    .loginbox{ 
+        margin-top: 10%;
+    }    
+}
+
+.loginbox_content{
+    padding:5% 11% 5% 11%;
+
+}
+
+.singtext{
+    font-family: "Open Sans",sans-serif;
+    font-size: 27px;  
+    color: #82C226;
+    float: right;
+    padding-right: 25%;
+}
+
+.submit-btn{
+    float: right;
+    margin-right: 28%;
+}
+
+.forgotpassword{
+    padding-left: 10%;
+}
+@media (max-width:800px) {
+    .submit-btn{
+        
+        margin-right: 23%;
+    }
+
+   
+}
