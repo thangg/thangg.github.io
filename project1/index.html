@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Leo-Hair</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="only screen and (max-width: 500px)" href="css/styleiIterfaceMobile.css">  <!-- link style media query mobile -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- link font gg -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,11 +15,11 @@
     <link rel="stylesheet" type="text/css" href="css/styleProduct.css"/>   <!-- css phần sán phẩm -->
     <link rel="stylesheet" type="text/css" href="css/styleProductNew.css"/>   <!-- css phần sán phẩm mới -->
     <link rel="stylesheet" type="text/css" href="css/styleFooter.css"/> <!--  css phần cuối content -->
-    <link rel="stylesheet" media="only screen and (max-width: 500px)" href="css/styleiIterfaceMobile.css">
+
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default" id="navbar-mobile">
                     <div class="container-fluid">
                       <!-- Brand and toggle get grouped for better mobile display -->
                       <div class="navbar-header">
@@ -33,7 +34,7 @@
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right" id="navbar-right-mobile">
                           <li class="nav-style"><a href="index.html" title="Trang chủ" >TRANG CHỦ <span class="sr-only">(current)</span></a></li>
                           <!-- hết trang chủ -->
                           <li class="dropdown nav-style" id="menusuutap"> 
@@ -42,7 +43,7 @@
                           </li>
                            <!-- hết bộ sưu tập -->
                           <li class="dropdown nav-style" id="menuSanpham">
-                            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" title="Sản phẩm">SẢN PHẨM<span class="caret"></span></a>
+                            <a href="" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" title="Sản phẩm">SẢN PHẨM<span class="caret"></span></a>
                             <i class="fas fa-caret-up" id="iconHiden2"></i>
 
                             <div id="menuSPhiden">
@@ -92,7 +93,7 @@
                                 </a>
                           </li>
                           <!-- hết giỏ hàng -->
-                        
+                        </ul>
                       </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                   </nav>
@@ -163,7 +164,7 @@
 
     <section id="slider-Quangcao" class="container">
         <div class="sliderQC1">
-            <div class="row">
+            <div class="row" id="row-mobile">
                 <div class="col-md-6" id="col1">
 
                         <div id="iconRight">
@@ -178,11 +179,11 @@
                             </button>
                         </div>
 
-                    <div class="slice">
+                    <div class="slice"  id="text-Qc-mobile">
                             <div class="col1-slide1">
                                     <img src="img/anh2222.jpg" class="img-responsive">      
                                     <div class="Text-Qc">
-                                        <p class="text1">Xu Hướng</p>
+                                        <p class="text1" id="text2">Xu Hướng</p>
                                         <h3 class="text2"><span> TÓC ĐẸP</span></h3>
                                         <p class="text3">2018</p>
                                     </div>
@@ -190,7 +191,7 @@
         
                             <div class="col1-slide1">
                                     <img src="img/anh33.jpg" class="img-responsive">      
-                                    <div class="Text-Qc">
+                                    <div class="Text-Qc" >
                                         <p class="text21"> <span> GIẢM GIÁ </span> </p>
                                         <h3 class="text22"> LÊN ĐẾN </h3>
                                         <p class="text23">35%</p>
@@ -214,8 +215,8 @@
             <div class="Promotion1">
                 <h1>KHUYẾN MẠI</h1>
 
-                <div class="slice2">
-
+                <div class="slice2" id="slice2-mobile">
+                
                     <div class="sclice-sanpham">
                         <div class="sale-img">
                             <img src="img/anh6.jpg" title="Xịt khoáng Wonder Pore Freshner" class="img-responsive">
@@ -241,7 +242,7 @@
                             </span>
                         </div>
                         <div class="Text-nameSP">
-                            <a href=""> DẦU XẢ THẺAPHY SYSTEM </a> <br>
+                            <a href=""> DẦU XẢ THERAPHY SYSTEM </a> <br>
                             <p> <span> 60.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 80.000₫ </span> </p> <br>
                             <div class="hien-quick">
                                     <a href="" class="Quick-View"> + XEM NHANH </a>
@@ -269,22 +270,33 @@
 
             </div>
           </div> 
+
+          <div class="sanphamkhuyenmai" id="sanphamkhuyenmai-mobile">
+              <button>
+                <i class="far fa-hand-point-up"></i>
+              </button>
+          </div>
            <!-- hết cột 1 phần sản phẩm  -->
           <div class="col-md-6" id="col-md66">
             <div class="Promotion2">
                 <h1>SẢN PHẨM NỔI BẬT</h1>
-                <div class="Productsp sanpham1">
-                    <img src="img/sp1.jpg" title="Gôm tóc RX4" class="img-responsive"> <br>
-                    <a href=""> Gôm tóc RX4 </a> <br>
-                    <p> 340.000₫ </p> <br>
-                    <div class="hien-quick">
-                         <a href="" class="Quick-View"> + XEM NHANH </a>
-                    </div>
-                   
+
+                <div class="Productsp sanpham1" id="sanpham-mobile">
+                   <div class="conten-spmobile"> 
+                       <img src="img/sp1.jpg" title="Gôm tóc RX4" class="img-responsive"> <br>
+                       <a href=""> Gôm tóc RX4 </a> <br>
+                       <p> 340.000₫ </p> <br>
+                       <div class="hien-quick">
+                          <a href="" class="Quick-View"> + XEM NHANH </a>
+                      </div>   
+                      <a href="" class="button-spmobile"> 
+                            <i class="far fa-hand-point-up"></i>
+                      </a>
+                   </div>
                 </div>
 
-                <div class="Productsp sanpham2">
-
+                <div class="Productsp sanpham2" id="sanpham-mobile">
+                   <div class="conten-spmobile">
                     <div class="sale-img">
                         <img src="img/sp2.jpg" title="Dầu xả Theraphy System" class="img-responsive">
                         <span class="sale-box">
@@ -296,12 +308,16 @@
                     <p> <span> 60.000₫ </span> <span style="color: #000; font-size: 12px; font-weight: 800; text-decoration: line-through;"> 80.000₫ </span> </p> <br>
                     <div class="hien-quick">
                             <a href="" class="Quick-View"> + XEM NHANH </a>
-                       </div>
+                    </div>
+                       <a  href="" class="button-spmobile">
+                            <i class="far fa-hand-point-up"></i>
+                       </a>
+                   </div>
                 </div>
                 
-                <div class="Productsp sanpham3">
-
-                    <div class="sale-img">
+                <div class="Productsp sanpham3" id="sanpham-mobile">
+                  <div class="conten-spmobile" >
+                      <div class="sale-img">
                         <img src="img/sp3.jpg" title="Xịt khoáng Wonder Pore Freshner" class="img-responsive">
                         <span class="sale-box">
                                 <span class="label-sale">Giảm</span>
@@ -313,18 +329,29 @@
                     <div class="hien-quick">
                             <a href="" class="Quick-View"> + XEM NHANH </a>
                        </div>
+
+                       <a href="" class="button-spmobile">
+                            <i class="far fa-hand-point-up"></i>
+                       </a>
+
+                  </div>       
                 </div>
 
-                <div class="Productsp sanpham4">
-                    <img src="img/sp4.jpg" title="Nước hoa hồng Smothing" class="img-responsive"> <br>
-                    <a href=""> NƯỚC HOA HỒNG SMOTHING </a> <br>
-                    <p> 250.000₫ </p> <br>
-                    <div class="hien-quick">
+                <div class="Productsp sanpham4" id="sanpham-mobile">
+                    <div class="conten-spmobile">
+                       <img src="img/sp4.jpg" title="Nước hoa hồng Smothing" class="img-responsive"> <br>
+                       <a href=""> NƯỚC HOA HỒNG SMOTHING </a> <br>
+                       <p> 250.000₫ </p> <br>
+                        <div class="hien-quick">
                             <a href="" class="Quick-View"> + XEM NHANH </a>
                        </div>
+                       <a href="" class="button-spmobile">
+                           <i class="far fa-hand-point-up"></i>
+                       </a>
+                    </div>
                 </div>
 
-                <div class="Productsp sanpham5 pdmargin">
+                <div class="Productsp sanpham5 pdmargin" id="sanpham-mobile-hidden">
                     <img src="img/sp5.jpg" title="Phấn nền Cream pact" class="img-responsive"> <br>
                     <a href=""> PHẤN NỀN CREAM PACT </a> <br>
                     <p> 900.000₫ </p> <br>
@@ -333,7 +360,7 @@
                        </div>
                 </div>
 
-                <div class="Productsp sanpham6 pdmargin">
+                <div class="Productsp sanpham6 pdmargin" id="sanpham-mobile-hidden">
                     <img src="img/sp6.jpg" title="Phấn phủ chống nắng" class="img-responsive"> <br>
                     <a href=""> PHẤN PHỦ CHỐNG NẮNG </a> <br>
                     <p> 800.000₫ </p> <br>
@@ -342,7 +369,7 @@
                        </div>
                 </div>
 
-                <div class="Productsp sanpham7 pdmargin">
+                <div class="Productsp sanpham7 pdmargin" id="sanpham-mobile-hidden">
                     <img src="img/sp7.jpg" title="Kem chống nhăn Laneige" class="img-responsive"> <br>
                     <a href=""> KEM CHỐNG NHĂN LANEIGE </a> <br>
                     <p> <span> 555.000₫ </span> </p> <br>
@@ -351,7 +378,7 @@
                        </div>
                 </div>
 
-                <div class="Productsp sanpham8 pdmargin">
+                <div class="Productsp sanpham8 pdmargin" id="sanpham-mobile-hidden">
                     
                     <div class="sale-img">
                         <img src="img/sp8.jpg" title="Nước hoa hồng The Rice" class="img-responsive">
@@ -375,7 +402,7 @@
     </section>  <!-- end PageProduct -->
 
     <article id="img-effect" class="container"> <!-- Quảng Cáo XU Hướng-->
-        <div class="col-md-6">
+        <div class="col-md-6" id="img-tendency-mobile">
             <div class="effect">
                 <a href="">
                     <img src="img/anhsua.png" alt="ảnh nền" class="img-responsive">
@@ -383,7 +410,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6" id="img-tendency-mobile2">
             <div class="effect">
                 <a href="">
                     <img src="img/anh11.png" alt="ảnh nền" class="img-responsive">
@@ -395,11 +422,13 @@
     <section class="container"> <!-- SẢN PHẨM MỚI, THƯƠNG HIỆU, TIN TỨC.-->
 
        <div id="ProductNew"> <!-- SẢN PHẨM MỚI -->
+
            <h1>SẢN PHẨM MỚI</h1>
+
            <div id="allPrNew">
-             <div class="col-md-3">  
-                <div class="ProductNew-row ProductNew-row1">
-                    
+
+             <div class="col-md-3" id="ProductNew-mobile-hidden">  
+                <div class="ProductNew-row ProductNew-row1">  
                         <img src="img/sp2.jpg" title="Dầu xả Theraphy System" class="img-responsive">
                         <span class="sale-box">
                             <span class="label-sale">Giảm</span>
@@ -413,12 +442,11 @@
                                 <a href="" class="Quick-View"> + XEM NHANH </a>
                            </div>
                            
-                            </span>
                         </div>
                  </div>
            </div>
 
-           <div class="col-md-3">
+           <div class="col-md-3" id="ProductNew-mobile">
                 <div class="ProductNew-row ProductNew-row2">
                         <img src="img/sp7.jpg" title="Kem chống nhăn Laneige" class="img-responsive"> <br>
                          <div id="Product-Promotion">
@@ -428,10 +456,13 @@
                                     <a href="" class="Quick-View"> + XEM NHANH </a>
                                </div>
                         </div>
-                    </div>
+                        <a href="" class="button-spmobile">
+                            <i class="fas fa-cart-plus"></i>
+                       </a>
+                </div>
            </div>
            
-           <div class="col-md-3">
+           <div class="col-md-3" id="ProductNew-mobile">
                  <div class="ProductNew-row ProductNew-row3">
                     <img src="img/sp4.jpg" title="Nước hoa hồng Smothing" class="img-responsive"> <br>
                         <div id="Product-Promotion">
@@ -441,10 +472,13 @@
                                     <a href="" class="Quick-View"> + XEM NHANH </a>
                                </div>
                         </div>
+                        <a href="" class="button-spmobile">
+                           <i class="fas fa-cart-plus"></i>
+                       </a>
                 </div>
            </div>
            
-           <div class="col-md-3">
+           <div class="col-md-3" id="ProductNew-mobile-hidden">
                <div class="ProductNew-row ProductNew-row4">
 
                     <img src="img/sp8.jpg" title="Nước hoa hồng The Rice" class="img-responsive">
@@ -462,47 +496,63 @@
                     </div>
                 </div>
            </div>
+        
          </div>
 
        </div> <!-- HẾT SẢN PHẨM MỚI -->
 
        <div id="trademark-news">
-           <div class="col-md-6">
-               <h1>THƯƠNG HIỆU</h1>
-               <div class="trademard">
+        
+                <div class="col-md-6">
+
+                   <h1>THƯƠNG HIỆU</h1>
 
                    <div class="row1">
+            
+                     <a href="" title="vender1">
+                         <div class="logo col-md-4">
+                           <img src="img/logo1.png"  class="img-responsive">
+                         </div>
+                     </a>
 
-                       <div class="logo col-md-4">
-                           <a href=""><img src="img/logo1.png" title="vender1" class="img-responsive"></a>
-                       </div>
-                       <div class="logo col-md-4">
-                            <a href=""><img src="img/logo2.png" title="vender2" class="img-responsive"></a>
-                        </div>
-                        <div class="logo col-md-4">
-                           <a href=""><img src="img/logo3.png" title="vender3" class="img-responsive"></a>
-                       </div>
+                     <a href="" title="vender2">
+                         <div class="logo col-md-4">
+                           <img src="img/logo2.png"  class="img-responsive">
+                         </div>
+                     </a>
+
+                     <a href="" title="vender3">
+                         <div class="logo col-md-4">
+                           <img src="img/logo3.png"  class="img-responsive">
+                         </div>
+                     </a>
 
                    </div> <!-- Hết hàng 1 Thương hiệu-->
 
                    <div class="row2">
 
-                        <div class="logo col-md-4">
-                            <a href=""><img src="img/logo4.png" title="vender4" class="img-responsive"></a>
-                        </div>
-                        
-                        <div class="logo col-md-4">
-                            <a href=""><img src="img/logo5.png" title="vender5" class="img-responsive"></a>
-                        </div>
-                        <div class="logo col-md-4">
-                             <a href=""><img src="img/logo6.png" title="vender6" class="img-responsive"></a>
+                     <a href="" title="vender4">
+                         <div class="logo col-md-4">
+                           <img src="img/logo4.png"  class="img-responsive">
                          </div>
+                     </a>
+
+                     <a href="" title="vender5">
+                         <div class="logo col-md-4">
+                           <img src="img/logo5.png"  class="img-responsive">
+                         </div>
+                     </a>
+
+                     <a href="" title="vender6">
+                         <div class="logo col-md-4">
+                           <img src="img/logo6.png" class="img-responsive">
+                         </div>
+                     </a>
 
                     </div> <!-- Hết hàng 2 Thương hiệu-->
 
                </div> 
-
-           </div> <!-- hết cột 1 phần thương hiệu và tin tức-->
+                       <!-- hết cột 1 phần thương hiệu và tin tức-->
            
            <div class="col-md-6">
                 <h1>TIN TỨC</h1>
@@ -535,8 +585,8 @@
  
     <footer>   <!-- phần content-end -->
         <div class="container">
-            <article class="hair-connective"> <!-- connective Page -->
-                <div class="connective-center">
+            <article class="hair-connective" id="hair-connective-mobile"> <!-- connective Page -->
+                <div class="connective-center" id="connective-center-mobile">
                         <a href="" title="facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="" title="twitter"><i class="fab fa-twitter"></i></a>
                         <a href="" title="google"><i class="fab fa-google-plus-g"></i></a>

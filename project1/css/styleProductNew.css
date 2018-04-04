@@ -60,6 +60,7 @@
 }
 .logo {
     position: relative;
+    width: 33.33%;
 }
 
 .logo::before {
@@ -103,4 +104,8 @@
 
 .logo:hover img {
     filter: grayscale(0);
+}
+
+.sanphamkhuyenmai {
+    display: none;
 }

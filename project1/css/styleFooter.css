@@ -109,3 +109,11 @@ li {
 #pays img {
     margin-top: 30px;
 }
+
+#Product-Promotion .button-spmobile, .button-spmobile {
+    display: none;
+}
+
+#trademark-news .row1 {
+    height: 112px;
+}
