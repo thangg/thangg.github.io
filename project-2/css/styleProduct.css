@@ -1,0 +1,176 @@
+#col-md6 {
+   width: 34%;
+}
+
+#col-md66 {
+    width: 66%
+}
+
+.Promotion1 h1, .Promotion2 h1, #ProductNew h1, #trademark-news h1 {
+    text-align: center;
+    padding: 18px 0 18px 0;
+    font-family: Roboto Condensed;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: normal;
+    color: #000;
+}
+
+.sclice-sanpham img {
+    width: 378px;
+    height: 460px;
+}
+
+#Product-Promotion a {
+    text-align: center;
+    /* color: #000; */
+    font-size: 12px;
+    font-family: Roboto Condensed;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* padding-top: 10px; */
+    margin-top: -10px;
+}
+
+#Product-Promotion a:hover, .news h4 a:hover {
+    color: #e97244;
+    transition: all 0.15s linear;
+    text-decoration: none;
+}
+
+#Product-Promotion p {
+    color: #e97244;
+    font-weight: 800;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+#Product-Promotion .Quick-View {
+    color: #e97244;
+    padding: 0;
+    min-width: 150px;
+    font-weight: 400;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857;
+    margin-top: -15px;
+    white-space: nowrap; 
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Promotion2 img {
+    width: 170px;
+    height: 190px;
+    margin: auto;
+}
+
+.Productsp {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.hien-quick {
+ position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .3s ease;
+}
+
+.Productsp:hover .hien-quick, .sclice-sanpham:hover .hien-quick, .ProductNew-row:hover .hien-quick {
+    width: 100%;
+    left: 0;
+}
+
+
+.pdmargin {
+    margin-top: 10px;
+}
+
+.Text-nameSP {
+    margin-top: 20px;
+}
+
+#Product-Promotion .sanphamShow {
+    visibility: visible;
+    animation-name: Showsanpham;
+    animation-duration: 0.7s;
+}
+
+@keyframes Showsanpham {
+    0%   {transform: translateX(50px)};
+    100% {transform: translateX(0)};
+}
+
+.sale-img {
+    position: relative;
+}
+
+.sale-box {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.sale-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid red;
+    border-left: 50px solid transparent;
+}
+
+.label-sale {
+    display: block;
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+    transform: rotate(45deg);
+}
+
+#Product-Promotion .Quick-View:hover {
+    color: #000;
+    transition: all 0.3s;
+}
+
+.slice2 {
+    position: relative;
+}
+
+.sclice-sanpham {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

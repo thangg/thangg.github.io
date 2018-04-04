@@ -1,0 +1,194 @@
+
+.navbar {
+    min-height: 100px;
+}
+
+#navbar-mobile {
+      padding: 0px 10px 15px 25px;
+      border: 1px solid white;
+}
+
+#navbar-mobile .navbar-toggle {
+    width: 60px;
+    height: 60px;
+    padding-left: 18px;
+    margin-top: 24px;
+}
+
+#navbar-right-mobile .nav-style {
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+#navbar-right-mobile .dropdown {
+    height: 40px;  
+}
+ 
+#navbar-right-mobile #search-mobile {
+    display: none;
+}
+
+#navbar-right-mobile #cart-mobile {
+    margin-top: 30px;
+}
+
+#navbar-right-mobile #login-mobile .dangnhap {
+    width: 100%;
+    font-size: 18px;
+}
+
+#navbar-right-mobile #cart-mobile .giohang {
+    font-size: 25px;
+    width: 100%;
+    height: 60px;
+}
+
+
+
+
+
+#row-mobile #col1 {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+#row-mobile #col1 img{
+    width: 100%;
+    height: 560px;
+}
+
+#row-mobile #col2 {
+   display: none;
+}
+
+/* #row-mobile #col2 img {
+    width: 100%;
+    height: 630px;
+} */
+
+#text-Qc-mobile .text1, #text-Qc-mobile .text21 {
+    font-size: 20px;
+    line-height: 45px;
+}
+
+#text-Qc-mobile .text2, #text-Qc-mobile .text22 {
+    font-size: 30px;
+    line-height: 15px;
+}
+
+#text-Qc-mobile .text3, #text-Qc-mobile .text23 {
+    font-size: 80px;
+    line-height: 110px;
+}
+
+#text-Qc-mobile .Text-Qc {
+    position: absolute;
+    top: 40%;
+    left: 27%;
+}
+
+#Product-Promotion #col-md6 {
+    width: 100%;
+    height: 540px;
+}
+
+#slice2-mobile img {
+    width: 100%;
+    height: 400px;
+}
+
+#sanphamkhuyenmai-mobile {
+    display: block;
+}
+
+#sanphamkhuyenmai-mobile button{
+    width: 100%;
+    height: 35px;
+    background-color: #e97244;
+    color: white;
+    font-size: 18px;
+}
+
+#Product-Promotion #col-md66 {
+    width: 100%;
+}
+
+#sanpham-mobile-hidden {
+    display: none;
+}
+
+#sanpham-mobile {
+    width: 50%;
+}
+
+#sanpham-mobile .sale-box {
+    right: 0;
+}
+
+.conten-spmobile {
+    width: 90%;
+    border-left: 1.3px solid #e0dddd;
+    border-right: 1.3px solid #e0dddd;
+    margin: auto;
+}
+
+.conten-spmobile .button-spmobile {
+    background-color: #e97244;
+    height: 30px;
+    color: white;
+    padding-top: 7px;
+    width: 100%;
+}
+
+#img-tendency-mobile2 {
+    display: none;
+}
+
+#img-tendency-mobile img {
+    width: 100%;
+    height: 130px;
+}
+
+#ProductNew-mobile-hidden {
+    display: none;
+}
+
+#ProductNew-mobile {
+    width: 50%;
+    float: left;
+}
+
+.ProductNew-row {
+    border-left: 1.3px solid #e0dddd;
+    border-right: 1.3px solid #e0dddd;
+}
+
+.ProductNew-row .button-spmobile {
+    color: white;
+    background-color: #e97244;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 25px;
+    padding-top: 4px;
+}
+
+#allPrNew {
+    height: 255px;
+}
+
+.logo {
+    width: 33.333%;
+    float: left;
+    padding: 0;
+}
+
+#hair-connective-mobile {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+#connective-center-mobile > a {
+    margin: 17px 30px 0 5px;
+}
